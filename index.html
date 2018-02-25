@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Todolist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="u-srOnly">
+		<symbol id="icon-add" viewBox="0 0 24 24">
+			<path d="M23 13.6h-9.4V23h-3.1v-9.4H1v-3.1h9.4V1h3.1v9.4H23v3.2z"/>
+		</symbol>
+		<symbol id="icon-delete" viewBox="0 0 24 24">
+			<path d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+		</symbol>
+	</svg>
+
+	<main>
+
+		<form class="c-formTask o-container" data-js="c-formTask">
+			<input type="text" class="c-formTask__input" data-js="c-formTask__input" required autofocus>
+			<button class="c-formTask__button o-btn" data-js="c-formTask__button" title="Add new task">
+				<svg class="c-formTask__buttonIcon o-btn__icon">
+					<use xlink:href="#icon-add"/>
+				</svg>
+			</button>
+		</form>
+
+		<div class="c-tasksList o-container" data-js="c-tasksList"></div>
+
+	</main>
+
+	<script src="todolist.js"></script>
+	
+</body>
+</html>
